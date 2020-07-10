@@ -1,17 +1,32 @@
-function countparts(a:String)
+fun count()
 {
- var sum:Int=0;
- for(char in a)
- {
-   if(char=='а'||char=='е'||char=='ё'||char=='и'||char=='о'||char=='у'||char=='ы'||char='э'||char=='ю'||char=='я')
-   {
-     sum++;
-   }
- }
- return sum;
+    var word:String;
+    var sum:Int=0;
+    var i :Int=0;
+    word = readLine()!!;
+    
+    for (char in word)
+    {
+        
+        if(char=='а' || char=='е' || char=='у'|| char=='ы'|| char=='о'|| char=='э' ||char=='я'|| char=='и'|| char=='ю'||
+char=='ё')
+        
+        {
+            sum++;
+        }
+            
+        
+        i++;
+        
+    }
+    
+    println(sum);
+    
 }
 
-function main(args:Array<String>)
+
+
+fun main (args:Array<String>)
 {
-  countparts("программа");
+    count();
 }

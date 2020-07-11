@@ -1,9 +1,8 @@
-fun count()
+fun count(word:String):Int
 {
-    var word:String;
     var sum:Int=0;
     var i :Int=0;
-    word = readLine()!!;
+   
     
     for (char in word)
     {
@@ -16,17 +15,18 @@ char=='ё')
         }
             
         
-        i++;
+        
         
     }
+   
+   return sum;
     
-    println(sum);
     
 }
 
-
-
 fun main (args:Array<String>)
 {
-    count();
+    var g:Int;
+    g = count("слово");
+    println(g);
 }
